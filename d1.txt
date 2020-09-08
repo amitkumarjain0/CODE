@@ -1,0 +1,34 @@
+EXERCISE 3
+CREATE TABLE Player(PId INTEGER PRIMARY KEY,
+PName VARCHAR(20) NOT NULL,
+Ranking INTEGER);
+
+Assignment -6
+Alter Table Store Rename to StoreName;
+
+aSSIGNMENT 7
+CREATE TABLE Bill(BillNO NUMBER PRIMARY KEY,
+StoreName VARCHAR(20) FOREIGN KEY REFERENCES StoreName(StoreName),
+Shopperid NUMBER FOREIGN KEY REFERENCES Shopper(ShopperId),
+ArCode CHAR(5) FOREIGN KEY REFERENCES Article(ArCode),
+Amount NUMBER,
+BillDate DATE,
+Quantity NUMBER(4) DEFAULT 1 CHECK(Quantity>0)
+);
+
+assignment 8
+CREATE TABLE Supplier (Supplierid VARCHAR2(6) PRIMARY KEY,
+Name VARCHAR2(30),
+ContactNo VARCHAR(15) NOT NULL,
+Emailid VARCHAR(30)
+);
+
+assignment 9
+ALTER TABLE Supplier ADD City VARCHAR2(10);
+
+
+assignment 10
+
+
+assignment 11
+CREATE TABLE CITY (CITY VARCHAR2(20) UNIQUE);
